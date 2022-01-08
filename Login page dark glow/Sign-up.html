@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XKWuK94WCrrwslK8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referer"/>
+</head>
+
+<body>
+    <div id="main">
+        <span style="font-size:20px;cursor:pointer" onclick="openNav()">☰</span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/login-page.html">Sign in</a>		
+        <a href="/Sign-up.html">Register</a>		
+        <a href="/About/index.html">About</a>		
+    </div>
+    
+    <div class="login">
+        <img src="/image/Lg.jpg"class="logo">
+        <h2>Register<p>Here</p></h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="username">
+            
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="password"> 
+            
+            <label for="Confirm password">Confirm Password</label>
+            <input type="text" id="password" placeholder="Confirm password...">
+
+            <p>Forgot password ?</p>
+            <input type="Submit" value="Sign up" class="active">
+            
+            <div class="active">
+                <a href="login-page.html">Login</a>
+            </div>
+           
+
+        </form>
+        <span class="active">OR</span>
+
+        <p>Sign up using </p>
+        <div class="Loginwithsocialmedia">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        
+        
+    </div>
+    
+   
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+        </script>  
+</body>
+</html>
